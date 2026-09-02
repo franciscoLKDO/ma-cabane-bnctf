@@ -1,0 +1,31 @@
+attribution: "Franck Holé"
+name: "Moving Target"
+category: "Supply Chain"
+description: |
+  The frontend source and GitHub Actions workflow have not changed across
+  several releases, yet the latest production build behaves differently.
+  Determine how an unchanged workflow produced a modified artifact, then
+  identify the exact commit responsible for the unexpected behaviour.
+
+  Submit it using the format `BNCTF{SHA-<commit>}`.
+
+  recommended tools: Git and GitHub
+solution:
+  path: ../solutions/flag3.md
+  state: hidden
+value: 100
+type: standard
+connection_info: https://ma-cabane.challenges.bnctf.com/
+state: visible
+flags:
+  - type: static
+    content: "BNCTF{SHA-1bff0b322ee8ba78f66c52e12e7d1e4d2b4c7673}"
+    data: null
+hints:
+  - type: standard
+    cost: 0
+    content: "Compare the mutable major-version tag with the reviewed release tag."
+tags:
+  - git
+  - supply-chain
+version: "0.1"

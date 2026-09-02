@@ -1,0 +1,28 @@
+attribution: "Franck Holé"
+name: "Production Only"
+category: "Supply Chain"
+description: |
+  Several customers report unexpected behaviour on our syrop website,
+  Begin the investigation with the deployed website and identify the first flag and maybe more.
+
+  recommended tools: browser developer tools
+solution:
+  path: ../solutions/flag1.md
+  state: hidden
+value: 50
+type: standard
+connection_info: https://ma-cabane.challenges.bnctf.com/
+state: visible
+flags:
+  - type: static
+    content: "BNCTF{a03746e3-b67d-4dfe-abb6-e479cb042a44}"
+    data: null
+hints:
+  - type: standard
+    cost: 0
+    content: "Some informations needs more inspection, go back to the source"
+tags:
+  - web
+  - blue-team
+  - supply-chain
+version: "0.1"

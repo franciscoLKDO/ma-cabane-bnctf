@@ -1,0 +1,28 @@
+attribution: "Franck Holé"
+name: "Follow the Build"
+category: "Supply Chain"
+description: |
+  The application source looks clean, but the deployed bundle behaves
+  differently from a local build. Trace how production artifacts are created
+  and inspect every repository trusted by that process.
+
+  recommended tools: GitHub and browser developer tools
+solution:
+  path: ../solutions/flag2.md
+  state: hidden
+value: 75
+type: standard
+connection_info: https://ma-cabane.challenges.bnctf.com/
+state: visible
+flags:
+  - type: static
+    content: "BNCTF{4aed75a3-1960-499f-86d2-83641b216b4d}"
+    data: null
+hints:
+  - type: standard
+    cost: 0
+    content: "Review the workflow responsible for building the production release."
+tags:
+  - blue-team
+  - supply-chain
+version: "0.1"

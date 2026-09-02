@@ -1,0 +1,28 @@
+attribution: "Franck Holé"
+name: "Ghosts in History"
+category: "Supply Chain"
+description: |
+  The suspicious change may not be the first security mistake in this
+  repository. Review its history for sensitive material that was committed and
+  later removed. Recover the flag left behind in an earlier revision.
+
+  recommended tools: Git
+solution:
+  path: ../solutions/flag4.md
+  state: hidden
+value: 125
+type: standard
+connection_info: https://ma-cabane.challenges.bnctf.com/
+state: visible
+flags:
+  - type: static
+    content: "BNCTF{aa783e97-4a0d-4258-b2ef-dc4bcc31619b}"
+    data: null
+hints:
+  - type: standard
+    cost: 0
+    content: "Deleted files remain visible in earlier Git commits."
+tags:
+  - git
+  - forensics
+version: "0.1"

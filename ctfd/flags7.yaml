@@ -1,0 +1,28 @@
+attribution: "Franck Holé"
+name: "Back to the Cabane"
+category: "Supply Chain"
+description: |
+  The investigation has uncovered credentials associated with the compromised
+  environment. Return to the website, locate the login, and use the
+  recovered evidence to complete the incident investigation.
+
+  recommended tools: browser
+solution:
+  path: ../solutions/flag7.md
+  state: hidden
+value: 200
+type: standard
+connection_info: https://ma-cabane.challenges.bnctf.com/
+state: visible
+flags:
+  - type: static
+    content: "BNCTF{981ba787-8c37-4a72-99f5-06a1cf1b16b8}"
+    data: null
+hints:
+  - type: standard
+    cost: 0
+    content: "Use the recovered account details on the webapp login."
+tags:
+  - web
+  - blue-team
+version: "0.1"

@@ -1,0 +1,28 @@
+attribution: "Franck Holé"
+name: "The Debug Trail"
+category: "Supply Chain"
+description: |
+  The production bundle communicates with an unexpected service. Investigate
+  that service as an analyst would: enumerate its public HTTP surface and look
+  for developer documentation that should not have been exposed.
+
+  recommended tools: browser developer tools and an HTTP client
+solution:
+  path: ../solutions/flag5.md
+  state: hidden
+value: 150
+type: standard
+connection_info: https://ma-cabane.challenges.bnctf.com/
+state: visible
+flags:
+  - type: static
+    content: "BNCTF{67625fce-96f8-4921-baf6-292b591c4b35}"
+    data: null
+hints:
+  - type: standard
+    cost: 0
+    content: "Development APIs often publish interactive documentation."
+tags:
+  - web
+  - api
+version: "0.1"

@@ -1,0 +1,28 @@
+attribution: "Franck Holé"
+name: "Hackers Hacked"
+category: "Supply Chain"
+description: |
+  The service protects operational data behind an administrative route—or at
+  least appears to. Examine how requests are routed and authorized, then use
+  the flaw to recover the next flag from the stored connection records.
+
+  recommended tools: browser developer tools and an HTTP client
+solution:
+  path: ../solutions/flag6.md
+  state: hidden
+value: 175
+type: standard
+connection_info: https://ma-cabane.challenges.bnctf.com/
+state: visible
+flags:
+  - type: static
+    content: "BNCTF{b2d7b880-7736-42ac-a6bf-2a6315637954}"
+    data: null
+hints:
+  - type: standard
+    cost: 0
+    content: "Test how small variations of the documented path are handled."
+tags:
+  - web
+  - api
+version: "0.1"
