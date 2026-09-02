@@ -10,7 +10,7 @@ description: |
 solution:
   path: ../solutions/flag6.md
   state: hidden
-value: 175
+value: 125
 type: standard
 connection_info: https://ma-cabane.challenges.bnctf.com/
 state: visible
