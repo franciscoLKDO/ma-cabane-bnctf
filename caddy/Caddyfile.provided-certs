@@ -1,0 +1,9 @@
+telemetricks.challenges.bnctf.com {
+	tls /certs/server-cert.pem /certs/server-key.pem
+	reverse_proxy telemetry-ws-server:8080
+}
+
+ma-cabane.challenges.bnctf.com {
+	tls /certs/server-cert.pem /certs/server-key.pem
+	reverse_proxy backend:3000
+}

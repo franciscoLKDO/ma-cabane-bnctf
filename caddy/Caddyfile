@@ -1,0 +1,12 @@
+{
+	# Force the requested ACME issuer when no certificate is supplied.
+	acme_ca https://acme-v02.api.letsencrypt.org/directory
+}
+
+telemetricks.challenges.bnctf.com {
+	reverse_proxy telemetry-ws-server:8080
+}
+
+ma-cabane.challenges.bnctf.com {
+	reverse_proxy backend:3000
+}

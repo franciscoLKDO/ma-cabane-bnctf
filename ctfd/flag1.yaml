@@ -2,7 +2,7 @@ attribution: "Franck Holé"
 name: "Production Only"
 category: "Supply Chain"
 description: |
-  Several customers report unexpected behaviour on our syrop website,
+  Several customers report unexpected behaviour on our syrop website production.
   Begin the investigation with the deployed website and identify the first flag and maybe more.
 
   recommended tools: browser developer tools
