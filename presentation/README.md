@@ -13,6 +13,14 @@ npm run dev
 
 `npm run build` génère le site statique dans `dist/`. `npm run export` permet l’export PDF si Playwright et son navigateur sont installés.
 
+## Publication sur GitHub Pages
+
+Le workflow `../.github/workflows/deploy-pages.yml` construit et publie uniquement la présentation. Il se lance lors d’un push sur `main` qui modifie `presentation/` ou le workflow, et peut aussi être lancé manuellement depuis l’onglet Actions.
+
+Dans **Settings → Pages → Build and deployment → Source**, sélectionner **GitHub Actions** avant le premier déploiement. Le chemin de base est fourni par GitHub Pages ; pour ce dépôt, l’adresse attendue est https://franciscolkdo.github.io/ma-cabane-bnctf/ (sauf domaine personnalisé).
+
+Les Actions sont épinglées à des SHA complets. L’installation utilise `npm ci` avec le lockfile de la présentation. Seul le job de déploiement dispose des permissions `pages: write` et `id-token: write`.
+
 ## Rythme
 
 Les notes indiquent un temps cible par diapositive : 12 min 50 au total, puis 1 à 2 minutes de questions. Le minuteur Slidev est réglé sur 13 minutes.
